@@ -1191,3 +1191,82 @@ export default class App extends Component{
     }
 }
 */
+
+// random-quote-generator
+
+import React,{Component} from "react";
+import { Text,View,TouchableOpacity,StyleSheet } from "react-native";
+
+export default class App extends Component{
+    constructor(props){
+        super(props);
+        this.state = {
+            currAuth:'Author',
+            currQuote:'Quote'
+        }
+    };
+    _onPress(){
+        this.assignQuote();
+    };
+    quoteData = require('./data.json').quotes;
+    
+    getRandomQuote(){
+        return this.quoteData[Math.floor(Math.random()*(this.quoteData.length))]
+    };
+    assignQuote(){
+        randomQuote = this.getRandomQuote();
+        this.setState({
+            currAuth:randomQuote.author,
+            currQuote:randomQuote.quote
+        })
+    }
+    render(){
+        return(
+            <View style = {styles.container}>
+                <View style={styles.innerContainer}>
+                    <Text style={styles.quote}>{this.state.currQuote}</Text>
+                    <Text style={styles.author}>-{this.state.currAuth}</Text>
+                </View>
+                <TouchableOpacity style={{alignItems:'center',border:'1px solid black'}} onPress={this._onPress.bind(this)}>
+                    <View style={styles.button}>
+                        <Text style={styles.buttonText}>New Quote</Text>
+                    </View>
+                </TouchableOpacity>
+            </View>
+        )
+    }
+}
+
+const styles = StyleSheet.create({
+    container : {
+        flex:1,
+        alignContent:'center',
+        justifyContent:'center',
+    },
+    innerContainer:{
+        justifyContent:'center',
+        alignItems:'center',
+        marginBottom:15,
+        border:'1px solid black'
+    },
+    quote:{
+        color:'green',
+        fontSize:20,
+        fontWeight:'800'
+    },
+    author:{
+        color:'green',
+        marginLeft:150
+    },
+    button:{
+        backgroundColor:'green',
+        paddingVertical:15,
+        
+        width:'8%',
+    },
+    buttonText:{
+        color:'#fff',
+        fontWeight:'bold',
+        textAlign:'center'
+    }
+})
