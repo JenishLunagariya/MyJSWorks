@@ -307,6 +307,60 @@ iframe {
     height: 101%;
 }
 
+#clock{
+    /* border: 1px solid red; */
+    background: rgba(221, 221, 221,0.7);
+    height: 5%;
+    color:black;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+#clock-time{
+    font-size: 14px;
+    font-weight: 600;
+    float: left;
+}
+#clock-date{
+    float: right;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+#google-bar{
+    /* border:1px solid black; */
+    position: relative;
+    margin-top: 10%;
+    height: 11.5%;
+    border-radius: 25px;
+    margin-left: 1%;
+    margin-right: 1%;
+    background: rgba(50, 50, 50, 0.8);
+}
+#google-g{
+    position: absolute;
+    background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        -webkit-text-fill-color: transparent;
+    font-size: 24px;
+    padding: 4%;
+}
+#google-mic{
+    /* border: 1px solid red; */
+    position: absolute;
+    background: conic-gradient(from -45deg, #4285f4 110deg, #ea4335 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        -webkit-text-fill-color: transparent;
+    font-size: 22px;
+    padding-left: 4%;
+    padding-bottom: 4%;
+    padding-top: 5%;
+    padding-right: 5%;
+    right: 0px;
+}
 .app-container .fa {
     color: #efefef;
 }
@@ -456,7 +510,12 @@ iframe {
 }
 
 .app-container .fa-google {
-    color: var(--fa-google);
+    /* color: var(--fa-google); */
+    background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        -webkit-text-fill-color: transparent;
 }
 
 .app-container .fa-google-wallet {

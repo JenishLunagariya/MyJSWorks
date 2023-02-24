@@ -28,13 +28,19 @@
                 </div>
             </div>
             <div id="home-screen" class="display-container" style="display: block;">
-                <div id="clock"></div>
-                <div id="google-bar"></div>
+                <div id="clock">
+                    <span id="clock-time"></span>
+                    <span id="clock-date"></span>
+                </div>
+                <div id="google-bar" onclick="app_google_bar()" style="cursor: pointer;">
+                    <i class="fa fa-google" id="google-g"></i>
+                    <i class="fa fa-microphone" id="google-mic"></i>
+                </div>
                 <div id="home-apps"></div>
                 <div id="back-btn">
                     <i class="fa fa-align-justify"></i>
                     <i class="fa fa-stop" onclick="displayFunc()"></i>
-                    <i class="fa fa-angle-left"></i>
+                    <i class="fa fa-angle-left" onclick=""></i>
                 </div>
             </div>
             <div class="display-container" id="display-1">
@@ -77,8 +83,7 @@
                 <div class="app-container">
                     <i class="fa fa-buysellads"></i>
                 </div>
-                <!--TODO: Continue defining function from below-->
-                <div class="app-container" onclick="app_chrome()">
+                <div class="app-container">
                     <i class="fa fa-chrome"></i>
                 </div>
                 <div class="app-container">
@@ -108,10 +113,10 @@
                 <div class="app-container">
                     <i class="fa fa-digg"></i>
                 </div>
-                <div class="app-container" onclick="app_dropbox()">
+                <div class="app-container" >
                     <i class="fa fa-dropbox"></i>
                 </div>
-                <div class="app-container" onclick="app_edge()">
+                <div class="app-container" >
                     <i class="fa fa-edge"></i>
                 </div>
                 <div class="app-container">
@@ -126,19 +131,19 @@
                 <div class="app-container">
                     <i class="fa fa-etsy"></i>
                 </div>
-                <div class="app-container" onclick="app_facebook()">
+                <div class="app-container" >
                     <i class="fa fa-facebook"></i>
                 </div>
-                <div class="app-container" onclick="app_firefox()">
+                <div class="app-container" >
                     <i class="fa fa-firefox"></i>
                 </div>
                 <div class="app-container">
                     <i class="fa fa-foursquare"></i>
                 </div>
-                <div class="app-container" onclick="app_freecodecamp()">
+                <div class="app-container" >
                     <i class="fa fa-free-code-camp"></i>
                 </div>
-                <div class="app-container" onclick="app_github()">
+                <div class="app-container" >
                     <i class="fa fa-github"></i>
                 </div>
                 <div class="app-container">
@@ -153,10 +158,10 @@
                 <div class="app-container">
                     <i class="fa fa-google-wallet"></i>
                 </div>
-                <div class="app-container" onclick="app_instagram()">
+                <div class="app-container" >
                     <i class="fa fa-instagram"></i>
                 </div>
-                <div class="app-container" onclick="app_linkdedin()">
+                <div class="app-container" >
                     <i class="fa fa-linkedin"></i>
                 </div>
                 <div class="app-container">
@@ -165,10 +170,10 @@
                 <div class="app-container">
                     <i class="fa fa-modx"></i>
                 </div>
-                <div class="app-container" onclick="app_paypal()">
+                <div class="app-container" >
                     <i class="fa fa-paypal"></i>
                 </div>
-                <div class="app-container" onclick="app_opera()">
+                <div class="app-container" >
                     <i class="fa fa-opera"></i>
                 </div>
                 <div class="app-container">
@@ -180,10 +185,10 @@
                 <div class="app-container">
                     <i class="fa fa-sellsy"></i>
                 </div>
-                <div class="app-container" onclick="app_stackoverflow()">
+                <div class="app-container" >
                     <i class="fa fa-stack-overflow"></i>
                 </div>
-                <div class="app-container" onclick="app_steam()">
+                <div class="app-container" >
                     <i class="fa fa-steam"></i>
                 </div>
                 <div class="app-container">
@@ -204,25 +209,25 @@
                 <div class="app-container">
                     <i class="	fa fa-vine"></i>
                 </div>
-                <div class="app-container" onclick="app_wechat()">
+                <div class="app-container" >
                     <i class="fa fa-wechat"></i>
                 </div>
-                <div class="app-container" onclick="app_whatsapp()">
+                <div class="app-container" >
                     <i class="fa fa-whatsapp"></i>
                 </div>
                 <div class="app-container" onclick="app_youtube()">
                     <i class="fa fa-youtube-play"></i>
                 </div>
-                <div class="app-container" onclick="app_spotify()">
+                <div class="app-container" >
                     <i class="fa fa-spotify"></i>
                 </div>
-                <div class="app-container" onclick="app_twitter()">
+                <div class="app-container" >
                     <i class="fa fa-twitter"></i>
                 </div>
-                <div class="app-container" onclick="app_skype()">
+                <div class="app-container" >
                     <i class="fa fa-skype"></i>
                 </div>
-                <div class="app-container" onclick="app_quora()">
+                <div class="app-container" >
                     <i class="fa fa-quora"></i>
                 </div>
                 <div id="back-btn">
@@ -240,19 +245,25 @@
             document.getElementById("app-display").style.display = "block";
             document.getElementById("app-display").style.background = "none"
             document.getElementById("display-1").style.display = "none";
-            // TODO: continue from below
-            myElement.innerHTML = '<iframe frameborder="0" src="https://www.amazon.in" referrerpolicy="same-origin"></iframe>'
+            // BUG: not working
+            myElement.innerHTML = '<iframe frameborder="0" src="https://www.amazon.in"></iframe>'
         }
         function app_apple(){
             document.getElementById("app-display").style.display = "block";
             document.getElementById("app-display").style.background = "none"
             document.getElementById("display-1").style.display = "none";
-            // TODO: continue from below 
+            // BUG: not working
             myElement.innerHTML = '<object type="text/html" data="https://www.apple.com/in/"></object>'
         }
         function app_google(){
             document.getElementById("app-display").style.display = "block";
             document.getElementById("app-display").style.background = "none"
+            document.getElementById("display-1").style.display = "none";
+            myElement.innerHTML = '<iframe frameborder="0" src="https://www.google.com/search?igu=1"></iframe>'
+        }
+        function app_google_bar(){
+            document.getElementById("app-display").style.display = "block";
+            document.getElementById("home-screen").style.display = "none";
             document.getElementById("display-1").style.display = "none";
             myElement.innerHTML = '<iframe frameborder="0" src="https://www.google.com/search?igu=1"></iframe>'
         }
@@ -269,6 +280,27 @@
             document.getElementById("home-screen").style.display = "block";
             document.getElementById("display-1").style.display = "none"
         }
+        // TODO: add another backhomeFunc(), which directly leads to home page and not display page
+        function refreshTime() {
+            let currTime = new Date();
+            const timeDisplay = document.getElementById("clock-time");
+            if (currTime.getMinutes()<10){
+                datetime = currTime.getHours() + ":" + "0" + currTime.getMinutes()
+            }else{
+                datetime = currTime.getHours() + ":" + currTime.getMinutes()
+            }
+            timeDisplay.textContent = datetime;
+        }
+        setInterval(refreshTime, 1000);
+        function refreshDate(){
+            months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+            let currDate = new Date();
+            const timeDisplay = document.getElementById("clock-date");
+            month = months[currDate.getMonth() + 1];
+            date = currDate.getDate();
+            timeDisplay.textContent = month + " " + date
+        }
+        setInterval(refreshDate, 1000);
     </script>
 </body>
 </html>
