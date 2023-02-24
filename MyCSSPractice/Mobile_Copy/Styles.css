@@ -1,0 +1,560 @@
+:root {
+    --fa-500px: #0099e5;
+    --fa-adn: #4A484C;
+    --fa-amazon: #ff9900;
+    --fa-android: #a4c639;
+    --fa-angellist: #000;
+    --fa-apple: #979797;
+    --fa-behance-square: --fa-behance;
+    --fa-behance: #1769ff;
+    --fa-bitbucket-square: --fa-bitbucket;
+    --fa-bitbucket: #205081;
+    --fa-bitcoin: #ee9209;
+    --fa-black-tie: #222;
+    --fa-btc: --fa-bitcoin;
+    --fa-buysellads: #c90100;
+    --fa-cc-amex: #007bc1;
+    --fa-cc-diners-club: #004A97;
+    --fa-cc-discover: #f68121;
+    --fa-cc-jcb: #003A8F;
+    --fa-cc-mastercard: #0a3a82;
+    --fa-cc-paypal: #253b80;
+    --fa-cc-stripe: #00afe1;
+    --fa-cc-visa: #0157a2;
+    --fa-chrome: #4587F3;
+    --fa-codepen: #000;
+    --fa-connectdevelop: #391448;
+    --fa-contao: #eb8623;
+    --fa-creative-commons: #231f20;
+    --fa-css3: #1680C0;
+    --fa-dashcube: #7f7f7f;
+    --fa-delicious: #3399ff;
+    --fa-deviantart: #4e6252;
+    --fa-digg: #000;
+    --fa-dribbble: #444444;
+    --fa-dropbox: #007ee5;
+    --fa-drupal: #0077c0;
+    --fa-empire: #000;
+    --fa-expeditedssl: #343433;
+    --fa-facebook-official: --fa-facebook;
+    --fa-facebook-square: --fa-facebook;
+    --fa-facebook: #3b5998;
+    --fa-firefox: #e66000;
+    --fa-flickr: #ff0084;
+    --fa-fonticons: #1C1E29;
+    --fa-forumbee: #83ad13;
+    --fa-foursquare: #0072b1;
+    --fa-ge: #000;
+    --fa-get-pocket: #d3505a;
+    --fa-gg-circle: #000;
+    --fa-gg: #000;
+    --fa-git-square: --fa-git;
+    --fa-git: #333;
+    --fa-github-alt: --fa-github;
+    --fa-github-square: --fa-github;
+    --fa-github: --fa-git;
+    --fa-gittip: #663300;
+    --fa-google-plus-square: --fa-google-plus;
+    --fa-google-plus: #dd4b39;
+    --fa-google-wallet: --fa-google;
+    --fa-google: #4285f4;
+    --fa-hacker-news: #ff6600;
+    --fa-houzz: #7ac142;
+    --fa-html5: #e34f26;
+    --fa-instagram: #3f729b;
+    --fa-internet-explorer: #1EBBEE;
+    --fa-ioxhost: #faa729;
+    --fa-joomla: #142849;
+    --fa-jsfiddle: #4679BD;
+    --fa-lastfm-square: --fa-lastfm;
+    --fa-lastfm: #c3000d;
+    --fa-leanpub: #0c0c0c;
+    --fa-linkedin-square: --fa-linkedin;
+    --fa-linkedin: #0976b4;
+    --fa-linux: #333333;
+    --fa-maxcdn: #FF6600;
+    --fa-meanpath: #538ed7;
+    --fa-medium: #000;
+    --fa-odnoklassniki-square: --fa-odnoklassniki;
+    --fa-odnoklassniki: #ed812b;
+    --fa-opencart: #2AC2EF;
+    --fa-openid: #F78C40;
+    --fa-opera: #cc0f16;
+    --fa-optin-monster: #83c11f;
+    --fa-pagelines: #000;
+    --fa-paypal: #253b80;
+    --fa-pied-piper-alt: --fa-pied-piper;
+    --fa-pied-piper-square: --fa-pied-piper;
+    --fa-pied-piper: #2f9f46;
+    --fa-pinterest-p: --fa-pinterest;
+    --fa-pinterest-square: --fa-pinterest;
+    --fa-pinterest: #cc2127;
+    --fa-qq: #000;
+    --fa-ra: #000;
+    --fa-rebel: --fa-ra;
+    --fa-reddit-square: --fa-reddit;
+    --fa-reddit: #ff4500;
+    --fa-renren: #005EAC;
+    --fa-safari: #1B88CA;
+    --fa-sellsy: #1f78b9;
+    --fa-share-alt-square: --fa-share-alt;
+    --fa-share-alt: #01bf01;
+    --fa-shirtsinbulk: #dd3a26;
+    --fa-simplybuilt: #000;
+    --fa-skyatlas: #00adbb;
+    --fa-skype: #00aff0;
+    --fa-slack: #0f7965;
+    --fa-slideshare: #e98325;
+    --fa-soundcloud: #f80;
+    --fa-spotify: #7ab800;
+    --fa-stack-exchange: #000;
+    --fa-stack-overflow: #fe7a15;
+    --fa-steam-square: --fa-steam;
+    --fa-steam: #0B0B0B;
+    --fa-stumbleupon-circle: --fa-stumbleupon;
+    --fa-stumbleupon: #eb4924;
+    --fa-tencent-weibo: #74AF2C;
+    --fa-trello: #256a92;
+    --fa-tripadvisor: #589442;
+    --fa-tumblr-square: --fa-tumblr;
+    --fa-tumblr: #35465c;
+    --fa-twitch: #6441a5;
+    --fa-twitter-square: --fa-twitter;
+    --fa-twitter: #55acee;
+    --fa-viacoin: #333;
+    --fa-vimeo-square: --fa-vimeo;
+    --fa-vimeo: #1ab7ea;
+    --fa-vine: #00b488;
+    --fa-vk: #45668e;
+    --fa-wechat: #93d034;
+    --fa-weibo: #E71D34;
+    --fa-weixin: --fa-wechat;
+    --fa-wikipedia-w: #000;
+    --fa-windows: #00bcf2;
+    --fa-wordpress: #21759b;
+    --fa-xing-square: --fa-xing;
+    --fa-xing: #026466;
+    --fa-y-combinator: #F0652F;
+    --fa-yahoo: #400191;
+    --fa-yc: --fa-y-combinator;
+    --fa-yelp: #af0606;
+    --fa-youtube-play: --fa-youtube;
+    --fa-youtube-square: --fa-youtube;
+    --fa-youtube: #e52d27;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid red; */
+    height: 100vh;
+}
+
+.mobile-container {
+    position: relative;
+    width: 260px;
+    height: 475px;
+    border: 7px solid black;
+    border-radius: 40px;
+    border-bottom-width: 12px;
+    padding: 0;
+    z-index: 0;
+    background: linear-gradient(237deg,
+            #64c1e6 0%,
+            #faa6a6 50%,
+            #9ffacf 0%,
+            #888fd8 100%);
+}
+
+.pop-up {
+    width: 100%;
+    height: 7%;
+    display: flex;
+    /* border: 1px solid red; */
+    border-radius: 40px 40px 0px 0px;
+    background: rgb(15, 15, 15);
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+#camera {
+    width: 6%;
+    height: 50%;
+    background: black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* z-index: 3; */
+}
+
+#camera-main {
+    width: 50%;
+    height: 50%;
+    background: rgb(6, 32, 24);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* z-index: 4; */
+}
+
+#camera-eye {
+    width: 30%;
+    height: 30%;
+    background: black;
+    border-radius: 50%;
+}
+
+.display-container {
+    /* position: relative; */
+    display: none;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    /* Firefox */
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 93.3%;
+    margin: 0;
+    padding-bottom: 15%;
+    margin-bottom: 10%;
+    background: transparent;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    z-index: 2;
+}
+
+.display-container::-webkit-scrollbar {
+    display: none;
+    /* Safari, Chrome and  MS explorer*/
+}
+
+.app-container {
+    width: 16%;
+    height: 9.5%;
+    margin: 10px;
+    border-radius: 20%;
+    background: rgba(245, 245, 245, 0.9);
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.app-container i {
+    background: transparent;
+    font-size: 24px;
+    width: 100%;
+    height: 100%;
+    padding-top: 18%;
+    text-align: center;
+    /* border: 1px solid red; */
+    border-radius: 20%;
+}
+
+#back-btn {
+    position: absolute;
+    width: 245px;
+    height: 7%;
+    bottom: -1px;
+    z-index: 2;
+    margin: 0;
+    background: rgba(226, 226, 226, 1);
+    /* border:1px solid red; */
+    border-radius: 0px 0px 30px 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#back-btn i {
+    /* border: 1px solid red; */
+    font-size: 20px;
+    padding: 3% 5% 1% 5%;
+    cursor: pointer;
+    width: 50px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#back-btn i:active {
+    background: rgba(150, 150, 150, 1);
+}
+
+#app-content{
+    height: 101%;
+    width: 100%;
+}
+
+iframe {
+    zoom: 0.10;
+    width: 100%;
+    height: 101%;
+}
+
+.app-container .fa {
+    color: #efefef;
+}
+
+.app-container .fa-amazon {
+    color: var(--fa-amazon);
+}
+
+.app-container .fa-500px {
+    color: var(--fa-500px);
+}
+
+.app-container .fa-adn {
+    color: var(--fa-adn);
+}
+
+.app-container .fa-android {
+    color: var(--fa-android);
+}
+
+.app-container .fa-angellist {
+    color: var(--fa-angellist);
+}
+
+.app-container .fa-apple {
+    color: var(--fa-apple);
+}
+
+.app-container .fa-bandcamp {
+    color: var(--fa-leanpub);
+}
+
+.app-container .fa-behance {
+    color: var(--fa-behance);
+}
+
+.app-container .fa-bitbucket {
+    color: var(--fa-bitbucket);
+}
+
+.app-container .fa-bitcoin {
+    color: var(--fa-bitcoin);
+}
+
+.app-container .fa-black-tie {
+    color: var(--fa-black-tie)
+}
+
+.app-container .fa-btc {
+    color: var(--fa-btc)
+}
+
+.app-container .fa-buysellads {
+    color: var(--fa-buysellads);
+}
+
+.app-container .fa-chrome {
+    color: var(--fa-chrome);
+}
+
+.app-container .fa-codepen {
+    color: var(--fa-codepen);
+}
+
+.app-container .fa-codiepie {
+    color: var(--fa-cc-stripe);
+}
+
+.app-container .fa-connectdevelop {
+    color: var(--fa-connectdevelop)
+}
+
+.app-container .fa-contao {
+    color: var(--fa-contao);
+}
+
+.app-container .fa-css3 {
+    color: var(--fa-css3);
+}
+
+.app-container .fa-dashcube {
+    color: var(--fa-dashcube);
+}
+
+.app-container .fa-delicious {
+    color: var(--fa-delicious);
+}
+
+.app-container .fa-deviantart {
+    color: var(--fa-deviantart);
+}
+
+.app-container .fa-digg {
+    color: var(--fa-digg)
+}
+
+.app-container .fa-dropbox {
+    color: var(--fa-dropbox);
+}
+
+.app-container .fa-edge {
+    color: var(--fa-delicious);
+}
+
+.app-container .fa-drupal {
+    color: var(--fa-drupal);
+}
+
+.app-container .fa-eercast {
+    color: var(--fa-flickr)
+}
+
+.app-container .fa-empire {
+    color: var(--fa-empire);
+}
+
+.app-container .fa-etsy {
+    color: var(--fa-get-pocket);
+}
+
+.app-container .fa-facebook {
+    color: var(--fa-facebook);
+}
+
+.app-container .fa-firefox {
+    color: var(--fa-firefox)
+}
+
+.app-container .fa-foursquare {
+    color: var(--fa-foursquare);
+}
+
+.app-container .fa-free-code-camp {
+    color: var(--fa-fonticons)
+}
+
+.app-container .fa-github {
+    color: var(--fa-github);
+}
+
+.app-container .fa-gg {
+    color: var(--fa-gg);
+}
+
+.app-container .fa-glide-g {
+    color: var(--fa-google-plus);
+}
+
+.app-container .fa-google {
+    color: var(--fa-google);
+}
+
+.app-container .fa-google-wallet {
+    color: var(--fa-google-wallet)
+}
+
+.app-container .fa-instagram {
+    color: var(--fa-instagram);
+}
+
+.app-container .fa-linkedin {
+    color: var(--fa-linkedin);
+}
+
+.app-container .fa-maxcdn {
+    color: var(--fa-maxcdn);
+}
+
+.app-container .fa-modx {
+    color: var(--fa-optin-monster);
+}
+
+.app-container .fa-paypal {
+    color: var(--fa-paypal);
+}
+
+.app-container .fa-opera {
+    color: var(--fa-opera);
+}
+
+.app-container .fa-pinterest-p {
+    color: var(--fa-pinterest-p);
+}
+
+.app-container .fa-reddit-alien {
+    color: var(--fa-reddit)
+}
+
+.app-container .fa-sellsy {
+    color: var(--fa-sellsy)
+}
+
+.app-container .fa-stack-overflow {
+    color: var(--fa-stack-overflow);
+}
+
+.app-container .fa-steam {
+    color: var(--fa-steam)
+}
+
+.app-container .fa-stumbleupon {
+    color: var(--fa-stumbleupon)
+}
+
+.app-container .fa-superpowers {
+    color: var(--fa-soundcloud)
+}
+
+.app-container .fa-tripadvisor {
+    color: var(--fa-tripadvisor);
+}
+
+.app-container .fa-tumblr {
+    color: var(--fa-tumblr)
+}
+
+.app-container .fa-vimeo {
+    color: var(--fa-vimeo);
+}
+
+.app-container .fa-vine {
+    color: var(--fa-vine)
+}
+
+.app-container .fa-wechat {
+    color: var(--fa-wechat);
+}
+
+.app-container .fa-whatsapp {
+    color: var(--fa-pied-piper);
+}
+
+.app-container .fa-youtube-play {
+    color: var(--fa-youtube-play);
+}
+
+.app-container .fa-spotify {
+    color: var(--fa-spotify);
+}
+
+.app-container .fa-twitter {
+    color: var(--fa-twitter)
+}
+
+.app-container .fa-skype {
+    color: var(--fa-skype);
+}
+
+.app-container .fa-quora {
+    color: var(--fa-weibo);
+}
